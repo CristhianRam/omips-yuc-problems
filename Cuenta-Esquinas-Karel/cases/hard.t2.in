@@ -1,0 +1,31 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="65000" memoriaStack="65000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="100" alto="100">
+			<monton x="11" y="4" zumbadores="1"/>
+			<pared x1="2" y1="3" x2="3"/>
+			<pared x1="3" y1="3" x2="4"/>
+			<pared x1="4" y1="3" x2="5"/>
+			<pared x1="5" y1="3" x2="6"/>
+			<pared x1="6" y1="3" x2="7"/>
+			<pared x1="7" y1="3" x2="8"/>
+			<pared x1="8" y1="3" x2="9"/>
+			<pared x1="9" y1="3" x2="10"/>
+			<pared x1="2" y1="3" y2="4"/>
+			<pared x1="2" y1="4" x2="3"/>
+			<pared x1="3" y1="4" x2="4"/>
+			<pared x1="4" y1="4" x2="5"/>
+			<pared x1="5" y1="4" x2="6"/>
+			<pared x1="6" y1="4" x2="7"/>
+			<pared x1="7" y1="4" x2="8"/>
+			<pared x1="8" y1="4" x2="9"/>
+			<pared x1="9" y1="4" x2="10"/>
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="3" yKarel="4" direccionKarel="ESTE" mochilaKarel="INFINITO">
+			<despliega tipo="POSICION"/>
+			<despliega tipo="UNIVERSO"/>
+		</programa>
+	</programas>
+</ejecucion>
