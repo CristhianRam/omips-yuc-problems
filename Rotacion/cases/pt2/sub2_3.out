@@ -1,0 +1,10 @@
+<resultados>
+	<mundos>
+		<mundo nombre="mundo_0">
+			<linea fila="1" compresionDeCeros="true">(1) 90 89 51 73 92 16 19 92 42 71 74 94 15 29 42 4 80 41 92 47 79 32 6 97 65 26 16 49 12 74 36 26 98 51 47 81 58 70 65 17 86 21 13 27 57 63 49 90 62 34 9 15 49 4 31 85 12 83 82 25 51 11 40 62 43 81 90 38 88 86 63 52 10 39 57 37 13 41 99 76 52 56 48 98 95 18 20 1 57 63 34 88 69 9 74 38 62 81 24 79 </linea>
+		</mundo>
+	</mundos>
+	<programas>
+		<programa nombre="p1" resultadoEjecucion="FIN PROGRAMA"/>
+	</programas>
+</resultados>
