@@ -1,0 +1,114 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="1000000" memoriaStack="1000000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="100" alto="100">
+            <monton x="1" y="1" zumbadores="3"/>
+<monton x="2" y="1" zumbadores="5"/>
+<monton x="3" y="1" zumbadores="14"/>
+<monton x="4" y="1" zumbadores="15"/>
+<monton x="5" y="1" zumbadores="25"/>
+<monton x="6" y="1" zumbadores="34"/>
+<monton x="7" y="1" zumbadores="35"/>
+<monton x="8" y="1" zumbadores="36"/>
+<monton x="9" y="1" zumbadores="38"/>
+<monton x="10" y="1" zumbadores="47"/>
+<monton x="11" y="1" zumbadores="49"/>
+<monton x="12" y="1" zumbadores="49"/>
+<monton x="13" y="1" zumbadores="52"/>
+<monton x="14" y="1" zumbadores="59"/>
+<monton x="15" y="1" zumbadores="67"/>
+<monton x="16" y="1" zumbadores="68"/>
+<monton x="17" y="1" zumbadores="71"/>
+<monton x="18" y="1" zumbadores="81"/>
+<monton x="19" y="1" zumbadores="86"/>
+<monton x="20" y="1" zumbadores="91"/>
+<monton x="21" y="1" zumbadores="98"/>
+<monton x="22" y="1" zumbadores="99"/>
+<monton x="23" y="1" zumbadores="101"/>
+<monton x="24" y="1" zumbadores="101"/>
+<monton x="25" y="1" zumbadores="106"/>
+<monton x="26" y="1" zumbadores="116"/>
+<monton x="27" y="1" zumbadores="117"/>
+<monton x="28" y="1" zumbadores="118"/>
+<monton x="29" y="1" zumbadores="119"/>
+<monton x="30" y="1" zumbadores="121"/>
+<monton x="31" y="1" zumbadores="131"/>
+<monton x="32" y="1" zumbadores="137"/>
+<monton x="33" y="1" zumbadores="141"/>
+<monton x="34" y="1" zumbadores="141"/>
+<monton x="35" y="1" zumbadores="151"/>
+<monton x="36" y="1" zumbadores="154"/>
+<monton x="37" y="1" zumbadores="161"/>
+<monton x="38" y="1" zumbadores="164"/>
+<monton x="39" y="1" zumbadores="174"/>
+<monton x="40" y="1" zumbadores="174"/>
+<monton x="41" y="1" zumbadores="178"/>
+<monton x="42" y="1" zumbadores="178"/>
+<monton x="43" y="1" zumbadores="187"/>
+<monton x="44" y="1" zumbadores="187"/>
+<monton x="45" y="1" zumbadores="192"/>
+<monton x="46" y="1" zumbadores="194"/>
+<monton x="47" y="1" zumbadores="195"/>
+<monton x="48" y="1" zumbadores="195"/>
+<monton x="49" y="1" zumbadores="200"/>
+<monton x="50" y="1" zumbadores="201"/>
+<monton x="51" y="1" zumbadores="207"/>
+<monton x="52" y="1" zumbadores="208"/>
+<monton x="53" y="1" zumbadores="213"/>
+<monton x="54" y="1" zumbadores="218"/>
+<monton x="55" y="1" zumbadores="225"/>
+<monton x="56" y="1" zumbadores="230"/>
+<monton x="57" y="1" zumbadores="239"/>
+<monton x="58" y="1" zumbadores="249"/>
+<monton x="59" y="1" zumbadores="250"/>
+<monton x="60" y="1" zumbadores="250"/>
+<monton x="61" y="1" zumbadores="250"/>
+<monton x="62" y="1" zumbadores="250"/>
+<monton x="63" y="1" zumbadores="250"/>
+<monton x="64" y="1" zumbadores="250"/>
+<monton x="65" y="1" zumbadores="250"/>
+<monton x="66" y="1" zumbadores="250"/>
+<monton x="67" y="1" zumbadores="250"/>
+<monton x="68" y="1" zumbadores="250"/>
+<monton x="69" y="1" zumbadores="250"/>
+<monton x="70" y="1" zumbadores="250"/>
+<monton x="71" y="1" zumbadores="250"/>
+<monton x="72" y="1" zumbadores="250"/>
+<monton x="73" y="1" zumbadores="250"/>
+<monton x="74" y="1" zumbadores="250"/>
+<monton x="75" y="1" zumbadores="250"/>
+<monton x="76" y="1" zumbadores="250"/>
+<monton x="77" y="1" zumbadores="250"/>
+<monton x="78" y="1" zumbadores="250"/>
+<monton x="79" y="1" zumbadores="250"/>
+<monton x="80" y="1" zumbadores="250"/>
+<monton x="81" y="1" zumbadores="250"/>
+<monton x="82" y="1" zumbadores="250"/>
+<monton x="83" y="1" zumbadores="250"/>
+<monton x="84" y="1" zumbadores="250"/>
+<monton x="85" y="1" zumbadores="250"/>
+<monton x="86" y="1" zumbadores="250"/>
+<monton x="87" y="1" zumbadores="250"/>
+<monton x="88" y="1" zumbadores="250"/>
+<monton x="89" y="1" zumbadores="250"/>
+<monton x="90" y="1" zumbadores="250"/>
+<monton x="91" y="1" zumbadores="250"/>
+<monton x="92" y="1" zumbadores="250"/>
+<monton x="93" y="1" zumbadores="250"/>
+<monton x="94" y="1" zumbadores="250"/>
+<monton x="95" y="1" zumbadores="250"/>
+<monton x="96" y="1" zumbadores="250"/>
+<monton x="97" y="1" zumbadores="250"/>
+<monton x="98" y="1" zumbadores="250"/>
+<monton x="99" y="1" zumbadores="250"/>
+<monton x="100" y="1" zumbadores="250"/>
+
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="NORTE" mochilaKarel="INFINITO">
+			<despliega tipo="UNIVERSO"/>
+            
+		</programa>
+	</programas>
+</ejecucion>

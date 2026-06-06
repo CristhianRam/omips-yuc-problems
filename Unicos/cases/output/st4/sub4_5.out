@@ -1,0 +1,12 @@
+<resultados>
+	<mundos>
+		<mundo nombre="mundo_0">
+			<linea fila="1" compresionDeCeros="true">(1) 101 102 105 109 110 111 113 121 122 126 127 132 133 134 135 139 140 142 145 147 148 150 152 153 154 157 158 159 161 165 167 168 169 171 172 175 176 177 178 179 181 183 188 189 190 191 194 196 197 198 199 </linea>
+		</mundo>
+	</mundos>
+	<programas>
+		<programa nombre="p1" resultadoEjecucion="FIN PROGRAMA">
+			<instrucciones coge_zumbador="10687"/>
+		</programa>
+	</programas>
+</resultados>

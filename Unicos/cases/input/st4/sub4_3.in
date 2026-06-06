@@ -1,0 +1,24 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="1000000" memoriaStack="1000000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="100" alto="100">
+            <monton x="1" y="1" zumbadores="110"/>
+<monton x="2" y="1" zumbadores="156"/>
+<monton x="3" y="1" zumbadores="148"/>
+<monton x="4" y="1" zumbadores="150"/>
+<monton x="5" y="1" zumbadores="181"/>
+<monton x="6" y="1" zumbadores="172"/>
+<monton x="7" y="1" zumbadores="185"/>
+<monton x="8" y="1" zumbadores="128"/>
+<monton x="9" y="1" zumbadores="177"/>
+<monton x="10" y="1" zumbadores="123"/>
+
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="NORTE" mochilaKarel="INFINITO">
+			<despliega tipo="UNIVERSO"/>
+            <despliega tipo="COGE_ZUMBADOR"/>
+		</programa>
+	</programas>
+</ejecucion>

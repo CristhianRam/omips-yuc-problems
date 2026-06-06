@@ -1,0 +1,100 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="1000000" memoriaStack="1000000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="100" alto="100">
+            <monton x="1" y="1" zumbadores="101"/>
+<monton x="2" y="1" zumbadores="131"/>
+<monton x="3" y="1" zumbadores="199"/>
+<monton x="4" y="1" zumbadores="144"/>
+<monton x="5" y="1" zumbadores="167"/>
+<monton x="6" y="1" zumbadores="104"/>
+<monton x="7" y="1" zumbadores="137"/>
+<monton x="8" y="1" zumbadores="190"/>
+<monton x="9" y="1" zumbadores="116"/>
+<monton x="10" y="1" zumbadores="173"/>
+<monton x="11" y="1" zumbadores="133"/>
+<monton x="12" y="1" zumbadores="126"/>
+<monton x="13" y="1" zumbadores="159"/>
+<monton x="14" y="1" zumbadores="120"/>
+<monton x="15" y="1" zumbadores="129"/>
+<monton x="16" y="1" zumbadores="104"/>
+<monton x="17" y="1" zumbadores="162"/>
+<monton x="18" y="1" zumbadores="181"/>
+<monton x="19" y="1" zumbadores="185"/>
+<monton x="20" y="1" zumbadores="143"/>
+<monton x="21" y="1" zumbadores="155"/>
+<monton x="22" y="1" zumbadores="183"/>
+<monton x="23" y="1" zumbadores="108"/>
+<monton x="24" y="1" zumbadores="112"/>
+<monton x="25" y="1" zumbadores="173"/>
+<monton x="26" y="1" zumbadores="134"/>
+<monton x="27" y="1" zumbadores="195"/>
+<monton x="28" y="1" zumbadores="180"/>
+<monton x="29" y="1" zumbadores="162"/>
+<monton x="30" y="1" zumbadores="187"/>
+<monton x="31" y="1" zumbadores="183"/>
+<monton x="32" y="1" zumbadores="163"/>
+<monton x="33" y="1" zumbadores="179"/>
+<monton x="34" y="1" zumbadores="115"/>
+<monton x="35" y="1" zumbadores="148"/>
+<monton x="36" y="1" zumbadores="151"/>
+<monton x="37" y="1" zumbadores="171"/>
+<monton x="38" y="1" zumbadores="141"/>
+<monton x="39" y="1" zumbadores="122"/>
+<monton x="40" y="1" zumbadores="115"/>
+<monton x="41" y="1" zumbadores="182"/>
+<monton x="42" y="1" zumbadores="154"/>
+<monton x="43" y="1" zumbadores="137"/>
+<monton x="44" y="1" zumbadores="183"/>
+<monton x="45" y="1" zumbadores="167"/>
+<monton x="46" y="1" zumbadores="190"/>
+<monton x="47" y="1" zumbadores="140"/>
+<monton x="48" y="1" zumbadores="189"/>
+<monton x="49" y="1" zumbadores="179"/>
+<monton x="50" y="1" zumbadores="185"/>
+<monton x="51" y="1" zumbadores="123"/>
+<monton x="52" y="1" zumbadores="103"/>
+<monton x="53" y="1" zumbadores="128"/>
+<monton x="54" y="1" zumbadores="102"/>
+<monton x="55" y="1" zumbadores="183"/>
+<monton x="56" y="1" zumbadores="125"/>
+<monton x="57" y="1" zumbadores="171"/>
+<monton x="58" y="1" zumbadores="180"/>
+<monton x="59" y="1" zumbadores="130"/>
+<monton x="60" y="1" zumbadores="131"/>
+<monton x="61" y="1" zumbadores="109"/>
+<monton x="62" y="1" zumbadores="132"/>
+<monton x="63" y="1" zumbadores="154"/>
+<monton x="64" y="1" zumbadores="154"/>
+<monton x="65" y="1" zumbadores="123"/>
+<monton x="66" y="1" zumbadores="156"/>
+<monton x="67" y="1" zumbadores="110"/>
+<monton x="68" y="1" zumbadores="171"/>
+<monton x="69" y="1" zumbadores="118"/>
+<monton x="70" y="1" zumbadores="124"/>
+<monton x="71" y="1" zumbadores="167"/>
+<monton x="72" y="1" zumbadores="108"/>
+<monton x="73" y="1" zumbadores="187"/>
+<monton x="74" y="1" zumbadores="110"/>
+<monton x="75" y="1" zumbadores="171"/>
+<monton x="76" y="1" zumbadores="193"/>
+<monton x="77" y="1" zumbadores="192"/>
+<monton x="78" y="1" zumbadores="121"/>
+<monton x="79" y="1" zumbadores="118"/>
+<monton x="80" y="1" zumbadores="104"/>
+<monton x="81" y="1" zumbadores="180"/>
+<monton x="82" y="1" zumbadores="124"/>
+<monton x="83" y="1" zumbadores="113"/>
+<monton x="84" y="1" zumbadores="117"/>
+<monton x="85" y="1" zumbadores="184"/>
+<monton x="86" y="1" zumbadores="120"/>
+
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="NORTE" mochilaKarel="INFINITO">
+			<despliega tipo="UNIVERSO"/>
+            <despliega tipo="COGE_ZUMBADOR"/>
+		</programa>
+	</programas>
+</ejecucion>
