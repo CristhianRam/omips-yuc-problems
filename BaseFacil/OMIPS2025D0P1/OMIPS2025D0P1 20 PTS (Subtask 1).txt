@@ -1,0 +1,133 @@
+import rekarel.globals;
+class program {
+	define putb(){
+		if(notNextToABeeper)
+			putbeeper();
+	}
+	define turn_back(){
+		turnleft();
+		turnleft();
+	}
+	define turn_right(){
+		turnleft();
+		turnleft();
+		turnleft();
+	}
+	define siguiente(){
+		turn_back();
+		while(frontIsClear){
+			move();
+		}
+		turnleft();
+		move();
+		turnleft();
+	}
+	program () {
+	//	turnoff();
+		iterate(7){
+			move();
+		}
+		putb();
+		siguiente();
+		iterate(7){
+			move();
+		}
+		iterate(2){
+			putb();
+			move();
+		}
+		siguiente();
+		iterate(7){
+			move();
+		}
+		iterate(3){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(7){
+			move();
+		}
+		iterate(4){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(12){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(13){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(14){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(15){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(14){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(13){
+			putb();
+			move();
+		}
+		siguiente();
+		iterate(12){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(7){
+			move();
+		}
+		iterate(4){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(7){
+			move();
+		}
+		iterate(3){
+			putb();
+			move();
+		}
+		siguiente();
+		
+		iterate(7){
+			move();
+		}
+		iterate(2){
+			putb();
+			move();
+		}
+		siguiente();
+		iterate(7){
+			move();
+		}
+		putb();
+		siguiente();
+		// TODO poner codigo aqui 
+		turnoff();
+	}
+}

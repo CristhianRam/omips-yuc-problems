@@ -1,0 +1,14 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="65000" memoriaStack="65000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="30" alto="30">
+			<monton x="5" y="16" zumbadores="1"/>
+			<monton x="8" y="30" zumbadores="1"/>
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="NORTE" mochilaKarel="INFINITO">
+			<despliega tipo="UNIVERSO"/>
+		</programa>
+	</programas>
+</ejecucion>

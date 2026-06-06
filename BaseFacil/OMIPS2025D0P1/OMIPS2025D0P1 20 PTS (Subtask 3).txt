@@ -1,0 +1,79 @@
+import rekarel.globals;
+class program {
+	void turn(n) {iterate(n) turnleft();}
+	void next(n, m, o) {
+		turn(2);
+		if (n == 0)
+			while(frontIsClear)
+				move();
+		if (n == 1)
+			iterate(7)
+				move();
+		if (n == 2) {
+			iterate(pred(o))
+				move();
+			iterate(m)
+				move();
+		}
+		turn(3);
+		move();
+		turn(3);
+	}
+	void linea() {
+		iterate(7) {
+			if (notNextToABeeper)
+				putbeeper();
+			move();
+		}
+		next(1,0,0);
+	}
+	void head(n, m) {
+		iterate(n)
+			move();
+		iterate(m) {
+			if (notNextToABeeper)
+				putbeeper();
+			if (frontIsClear)
+				move();
+		}
+		if (pred(m) == 0)
+			return;
+		if (notNextToABeeper) {
+			turn(2);
+			move();
+			turn(2);
+		}
+		next(2, n, m);
+		head(succ(n), pred(m, 2));
+	}
+	void encuentra() {
+		while(frontIsClear && notNextToABeeper)
+			move();
+		if (frontIsBlocked)
+			next(0,0,0);
+	}
+	program () {
+		while(notFacingEast)
+			turnleft();
+		while (notNextToABeeper)
+			encuentra();
+		move();
+		while (notNextToABeeper)
+			encuentra();
+		turn(3);
+		iterate(14)
+			move();
+		turn(3);
+		iterate(3)
+			move();
+		turn(2);
+		iterate(7)
+			linea();
+		turn(2);
+		iterate(4)
+			move();
+		turn(2);
+		head(0, 15);
+		turnoff();
+	}
+}

@@ -1,0 +1,28 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="65000" memoriaStack="65000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="30" alto="30">
+			<monton x="20" y="1" zumbadores="1"/>
+			<monton x="21" y="1" zumbadores="1"/>
+			<monton x="22" y="1" zumbadores="1"/>
+			<monton x="23" y="1" zumbadores="1"/>
+			<monton x="24" y="1" zumbadores="1"/>
+			<monton x="25" y="1" zumbadores="1"/>
+			<monton x="26" y="1" zumbadores="1"/>
+			<monton x="20" y="2" zumbadores="1"/>
+			<monton x="21" y="2" zumbadores="1"/>
+			<monton x="22" y="2" zumbadores="1"/>
+			<monton x="23" y="2" zumbadores="1"/>
+			<monton x="24" y="2" zumbadores="1"/>
+			<monton x="25" y="2" zumbadores="1"/>
+			<monton x="26" y="2" zumbadores="1"/>
+			<monton x="30" y="8" zumbadores="1"/>
+			<monton x="19" y="10" zumbadores="1"/>
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="NORTE" mochilaKarel="INFINITO">
+			<despliega tipo="UNIVERSO"/>
+		</programa>
+	</programas>
+</ejecucion>

@@ -1,0 +1,130 @@
+usa rekarel.globales;
+iniciar-programa
+
+    {SOLUCION BUSQUEDA EXHAUSTIVA - CESAR}
+
+	define norte como mientras no orientado-al-norte hacer gira-izquierda;
+	define sur como mientras no orientado-al-sur hacer gira-izquierda;
+	define este como mientras no orientado-al-este hacer gira-izquierda;
+	define oeste como mientras no orientado-al-oeste hacer gira-izquierda;
+	define gira(n) como repetir n veces gira-izquierda;
+	define adelante(n) como repetir n veces si frente-libre entonces avanza;
+	define deja(n) como repetir n veces deja-zumbador;
+	define pared como mientras frente-libre hacer avanza;
+	define esquina como inicio sur; pared; oeste; pared; norte; fin;
+
+	define super-avanza como inicio
+		si frente-libre entonces avanza
+		si-no inicio
+			sur;
+			pared;
+			este;
+			si frente-libre entonces inicio
+				avanza;
+				norte;
+			fin;
+		fin;
+	fin;
+
+	define-calculo cuenta(total) como inicio
+		super-avanza;
+		si orientado-al-norte entonces inicio
+			si junto-a-zumbador entonces regresa cuenta(sucede(total))
+			si-no regresa cuenta(total);
+		fin
+		si-no regresa total;
+	fin;
+	
+	define-calculo mide-alto(h) como inicio
+		norte;
+		pared;
+		regresa fila-actual;
+	fin;
+
+	define-calculo mide-ancho(a) como inicio
+		este;
+		pared;
+		regresa columna-actual;
+	fin;
+
+	define coordenada(fila, columna) como inicio
+		si fila < fila-actual entonces sur
+		si-no norte;
+		mientras no (fila-actual == fila) hacer avanza;
+
+		si columna < columna-actual entonces oeste
+		si-no este;
+		mientras no (columna-actual == columna) hacer avanza;
+
+		este;
+	fin;
+
+	define siguiente-linea(largo) como inicio
+		sur;
+		si frente-libre entonces avanza;
+		oeste;
+		adelante(largo);
+		este;
+	fin;
+	
+	define-calculo checa-karel(paso, zumbadores, dibuja) como inicio
+		si dibuja == 1 y no junto-a-zumbador entonces deja-zumbador;
+		
+		si paso == 1 entonces siguiente-linea(1)
+		si-no si paso == 4 entonces siguiente-linea(3)
+		si-no si paso == 9 entonces siguiente-linea(5)
+		si-no si paso == 16 entonces siguiente-linea(7)
+		si-no si paso == 25 entonces siguiente-linea(9)
+		si-no si paso == 36 entonces siguiente-linea(11)
+		si-no si paso == 49 entonces siguiente-linea(13)
+		si-no si paso == 64 entonces siguiente-linea(10)
+		si-no si paso == 71 entonces siguiente-linea(6)
+		si-no si paso == 78 entonces siguiente-linea(6)
+		si-no si paso == 85 entonces siguiente-linea(6)
+		si-no si paso == 92 entonces siguiente-linea(6)
+		si-no si paso == 99 entonces siguiente-linea(6)
+		si-no si paso == 106 entonces siguiente-linea(6)
+		si-no si paso == 113 entonces inicio
+			si dibuja == 1 entonces apagate;
+			regresa zumbadores;
+		fin
+		si-no si frente-libre entonces inicio avanza; fin;
+		
+		si junto-a-zumbador entonces regresa checa-karel(sucede(paso), sucede(zumbadores), dibuja)
+		si-no regresa checa-karel(sucede(paso),zumbadores, dibuja);
+	fin;
+
+	define dibuja-karel como inicio
+		oeste;
+		adelante(3);
+		norte;
+		adelante(14);
+		este;
+		checa-karel(1, 0, 1);
+	fin;
+	
+	define haz-busqueda(zumbadores, fila, columna, ancho) como inicio
+		coordenada(fila, columna);
+		si junto-a-zumbador entonces inicio
+			si checa-karel(1,1,0) == zumbadores entonces dibuja-karel;
+		fin
+		si-no inicio
+			si checa-karel(1,0,0) == zumbadores entonces dibuja-karel;
+		fin;
+
+		si 8 < columna entonces haz-busqueda(zumbadores, fila, precede(columna), ancho)
+		si-no si 15 < fila entonces haz-busqueda(zumbadores, precede(fila), ancho, ancho)
+		si-no apagate;
+	fin;
+	
+	define resuelve(zumbadores, alto, ancho) como inicio
+		si es-cero(alto) entonces resuelve(zumbadores, mide-alto(0), ancho)
+		si-no si es-cero(ancho) entonces resuelve(zumbadores, alto, mide-ancho(0))
+		si-no haz-busqueda(zumbadores, alto, precede(ancho, 7), precede(ancho, 7));
+	fin;
+	
+	inicia-ejecucion
+		resuelve(cuenta(0), 0, 0);
+		apagate;
+	termina-ejecucion
+finalizar-programa
