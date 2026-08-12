@@ -1,0 +1,32 @@
+import rekarel.globals;
+class program {
+	void turn(n){
+		iterate(n) turnleft();
+	}
+	void dfs(){
+		if(!(beepersOnFloor == 1)){
+			putbeeper();
+			putbeeper();
+			iterate(4){
+				if(frontIsClear){
+					move();
+					if(!(beepersOnFloor == 2)){
+						dfs();
+					}
+					turn(2);
+					move();
+					turn(2);
+				}	
+				turnleft();
+			}
+		}
+		else {
+			turnoff();
+		}
+	}
+	
+	program () {
+		dfs(); 
+		turnoff();
+	}
+}
