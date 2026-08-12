@@ -5,10 +5,10 @@ Utiliza tus conocimientos de programación para ayudarlo a encontrar su juguete.
 #### Entrada y salida
 
 Entrada:
-![Mundo de entrada]([https://github.com/CristhianRam/omips-yuc-problems/blob/main/Rotacion/statements/sample.in.png?raw=true](https://github.com/CristhianRam/omips-yuc-problems/blob/main/Buscar%20Juguete/in.png?raw=true)
+![Mundo de entrada]([https://github.com/CristhianRam/omips-yuc-problems/blob/main/Rotacion/statements/sample.in.png?raw=true](https://github.com/CristhianRam/omips-yuc-problems/blob/main/Buscar%20Juguete/in.png?raw=true))
 
 Salida:
-![Mundo de salida]([https://github.com/CristhianRam/omips-yuc-problems/blob/main/Rotacion/statements/sample.out.png?raw=true](https://github.com/CristhianRam/omips-yuc-problems/blob/main/Buscar%20Juguete/in.png?raw=true)
+![Mundo de salida]([https://github.com/CristhianRam/omips-yuc-problems/blob/main/Rotacion/statements/sample.out.png?raw=true](https://github.com/CristhianRam/omips-yuc-problems/blob/main/Buscar%20Juguete/in.png?raw=true))
 
 
 #### Consideraciones
