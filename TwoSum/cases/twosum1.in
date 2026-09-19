@@ -1,0 +1,19 @@
+<ejecucion version="1.1">
+	<condiciones instruccionesMaximasAEjecutar="10000000" longitudStack="65000" memoriaStack="65000" llamadaMaxima="5"/>
+	<mundos>
+		<mundo nombre="mundo_0" ancho="100" alto="100">
+			<monton x="1" y="1" zumbadores="2"/>
+			<monton x="2" y="1" zumbadores="4"/>
+			<monton x="3" y="1" zumbadores="5"/>
+			<monton x="4" y="1" zumbadores="6"/>
+			<monton x="5" y="1" zumbadores="8"/>
+			<monton x="6" y="1" zumbadores="10"/>
+			<monton x="7" y="1" zumbadores="20"/>
+		</mundo>
+	</mundos>
+	<programas tipoEjecucion="CONTINUA" intruccionesCambioContexto="1" milisegundosParaPasoAutomatico="0">
+		<programa nombre="p1" ruta="{$2$}" mundoDeEjecucion="mundo_0" xKarel="1" yKarel="1" direccionKarel="ESTE" mochilaKarel="13">
+			<despliega tipo="ORIENTACION"/>
+		</programa>
+	</programas>
+</ejecucion>
